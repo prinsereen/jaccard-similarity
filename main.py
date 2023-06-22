@@ -4,11 +4,8 @@ from nltk.tokenize import word_tokenize
 import nltk
 from fastapi import FastAPI, UploadFile, Request
 from fastapi.responses import JSONResponse
-from werkzeug.utils import secure_filename
-from pyngrok import ngrok
 import threading
 import uvicorn
-import nest_asyncio
 
 # Download the "punkt" resource
 nltk.download('punkt')
